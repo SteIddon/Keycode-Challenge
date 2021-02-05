@@ -1,0 +1,17 @@
+body {
+    background-image: linear-gradient(to right, rgb(77, 77, 206), rgb(226, 39, 226));
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#anykey {
+    height: 100%;
+    width: 100%;
+    font-family: cursive;
+    font-size: 5em;
+    letter-spacing: 1mm;
+    word-spacing: 5mm;
+    position: relative;
+    top: 300px;
+}
