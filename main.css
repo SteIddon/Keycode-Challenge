@@ -1,17 +1,51 @@
 body {
+    position:static;
     background-image: linear-gradient(to right, rgb(77, 77, 206), rgb(226, 39, 226));
     text-align: center;
     margin: 0;
     padding: 0;
+    height:100%;
+    width:100%;
 }
 
 #anykey {
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 1800px;
     font-family: cursive;
     font-size: 5em;
     letter-spacing: 1mm;
     word-spacing: 5mm;
     position: relative;
     top: 300px;
+    display: block;
+}
+#eventkey {
+    height:200px;
+    width: 200px;
+    display:none;
+    position: fixed;
+    top: 500px;
+    font-family: cursive;
+    font-size: 2em;
+    right: 800px;
+}
+#eventcode {
+    height:200px;
+    width: 200px;
+    display:none;
+    position: fixed;
+    top: 500px;
+    font-family: cursive;
+    font-size: 2em;
+    right:1200px;
+}
+#eventwhich {
+    height:200px;
+    width: 200px;
+    display:none;
+    position: fixed;
+    top: 500px;
+    font-family: cursive;
+    font-size: 2em;
+    right: 400px;
 }
