@@ -3,10 +3,21 @@ let eventCode = document.getElementById("eventcode");
 let eventWhich = document.getElementById("eventwhich");
 let eventKey = document.getElementById("eventkey");
 
-
-addEventListener("keypress", () => {
+document.addEventListener("keypress", () => {
         anyKey.textContent = ""
+});
+
+let lettEr = document.getElementById("letter");
+let coDe = document.getElementById("code");
+let whiCh = document.getElementById("which");
+
+document.addEventListener("keypress", (event) => {
         eventCode.style.display = "block"
         eventWhich.style.display = "block"
         eventKey.style.display = "block"
-});
+        whiCh.textContent = event.which;
+        coDe.textContent = event.code;
+        lettEr.textContent = event.key;
+        anyKey.textContent = event.which;
+        anyKey.style.right = "50px";
+    });
