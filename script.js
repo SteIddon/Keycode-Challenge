@@ -5,7 +5,7 @@ let eventKey = document.getElementById("eventkey");
 
 
 addEventListener("keypress", () => {
-        anyKey.style.display = "none"
+        anyKey.textContent = ""
         eventCode.style.display = "block"
         eventWhich.style.display = "block"
         eventKey.style.display = "block"
