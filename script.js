@@ -19,5 +19,6 @@ document.addEventListener("keypress", (event) => {
         coDe.textContent = event.code;
         lettEr.textContent = event.key;
         anyKey.textContent = event.which;
-        anyKey.style.right = "50px";
+        anyKey.style.top = "30%";
+        anyKey.style.right = "7%";
     });
