@@ -1,22 +1,24 @@
 body {
-    position:static;
-    background-image: linear-gradient(to right, rgb(77, 77, 206), rgb(226, 39, 226));
+    background-image:repeating-radial-gradient(blue, violet);
     text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    height:100%;
-    width:100%;
+    height:100vh;
+    width:100vw;
 }
 
 #anykey {
-    height: 200px;
-    width: 1800px;
+    height: 100px;
+    width: 80%;
     font-family: cursive;
     font-size: 5em;
     letter-spacing: 1mm;
     word-spacing: 5mm;
-    position: relative;
-    top: 300px;
+    position: fixed;
+    top: 40%;
+    right: 200px;
     display: block;
 }
 #eventkey {
@@ -48,4 +50,81 @@ body {
     font-family: cursive;
     font-size: 2em;
     right: 400px;
+}
+
+@media screen and (max-width: 480px) {
+    #anykey {
+        font-size: 1.5em;
+        width: 80%;
+        height: 10%;
+        position:fixed;
+        right: 30px;
+        letter-spacing: none;
+    }
+    #eventkey, #eventwhich, #eventcode {
+        top: 65%;
+        height: 80px;
+        width: 80px;
+        font-size: 0.8em;
+    }
+    #eventwhich {
+        right: 10%;
+    }
+    #eventkey {
+        left: 10%;
+    }
+    #eventcode {
+        right: 36%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    #anykey {
+        font-size: 3.5em;
+        width: 80%;
+        height: 10%;
+        position:fixed;
+        left: 80px;
+        letter-spacing: none;
+    }
+    #eventkey, #eventwhich, #eventcode {
+        top: 65%;
+        height: 80px;
+        width: 80px;
+        font-size: 1.4em;
+    }
+    #eventwhich {
+        right: 10%;
+    }
+    #eventkey {
+        left: 10%;
+    }
+    #eventcode {
+        right: 46%;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1500px) {
+    #anykey {
+        font-size: 3.5em;
+        width: 80%;
+        height: 10%;
+        position:fixed;
+        left: 80px;
+        letter-spacing: none;
+    }
+    #eventkey, #eventwhich, #eventcode {
+        top: 65%;
+        height: 80px;
+        width: 80px;
+        font-size: 1.8em;
+    }
+    #eventwhich {
+        right: 10%;
+    }
+    #eventkey {
+        left: 10%;
+    }
+    #eventcode {
+        right: 48%;
+    }
 }
